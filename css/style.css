@@ -1,0 +1,103 @@
+body {
+    background-image: url(../imgs/background-future.jpg);
+    display: grid;
+    grid-template-areas: 'barra' 'jogo' 'jogo';
+}
+
+.jogo {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    align-items: center;   
+    justify-content: space-around;
+    grid-area: jogo;
+}
+
+.genius {
+    
+    background-color: rgb(8, 0, 0);
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+                         'amarelo azul';
+    gap: 10px;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.verde {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+    border: 1px solid rgb(2, 71, 2);
+}
+
+.vermelho {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+    border: 1px solid rgb(71, 2, 2);
+}
+.amarelo {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    border: 1px solid rgb(45, 77, 3);
+}
+.azul {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    border: 1px solid rgb(16, 4, 71);
+}
+
+.selected {
+    opacity: 0.3;
+}
+
+.jogar {
+    background-color: black;
+    color: white;
+    width: 10rem;
+    position: absolute;
+    margin-top: 3rem;
+    border-radius: 30px;
+}
+
+.menu {
+    position: absolute;
+    grid-area: barra;
+    background-color: rgb(43, 42, 51);
+    height: 100vh;
+    width: 10rem;
+}
+
+.score {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10rem;
+    margin-left: 1rem;
+    background-color: rgb(24, 23, 23);
+    height: 10rem;
+    width: 8rem;
+}
+
+.msg {
+    font-size: 8rem;
+    color: white;
+    position: absolute;
+    margin-left: 83rem;
+}
+
+.prox {
+    position: absolute;
+    margin-left: 95rem;
+    margin-top: 25rem;
+    font-size: 30px;
+    width: 16rem;
+    border-radius: 30px;
+    background-color: rgb(43, 41, 41);
+    color: white;
+}
